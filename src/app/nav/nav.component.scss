@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: lightcoral;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+
+}
+
+.header__container {
+    width: 800px;
+    display: flex;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.header__list-item {
+    flex-grow: 2;
+}
