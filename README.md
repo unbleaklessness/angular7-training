@@ -1,3 +1,5 @@
+[Learn Angular 7 in 50 Minutes - A Free Beginner's Crash Course](https://youtu.be/5wtnKulcquA?t=1872)
+
 # Angular7Training
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.

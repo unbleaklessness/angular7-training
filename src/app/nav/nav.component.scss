@@ -1,31 +1,46 @@
+@import "../../mixins.scss";
+
 .header {
     width: 100%;
+    height: 50px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    background-color: lightcoral;
-}
-
-.header__logo {
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-
-}
-
-.header__container {
-    width: 800px;
-    display: flex;
-}
-
-.header__list {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.header__list-item {
-    flex-grow: 2;
+    background-color: #f08080;
+    @include e("container") {
+        width: 800px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    @include e("logo") {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+    }
+    @include e("list") {
+        list-style: none;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        flex: 1 0;
+    }
+    @include e("list-item") {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    @include e("list-link") {
+        text-decoration: none;
+        color: white;
+        padding: 0 25px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease 0s;
+        &:hover {
+            background-color: #c76b6b;
+        }
+    }
 }

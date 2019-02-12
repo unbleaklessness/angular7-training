@@ -1,3 +1,15 @@
-<p>
-  home works!
-</p>
+<h1 [class.gray]="h1Style">Home</h1>
+
+<h3 [ngClass]="{
+  'gray': h1Style,
+  'large': !h1Style
+}">Something</h3>
+
+<p [style.color]="h1Style ? 'red' : 'blue'">Some text</p>
+
+<p [ngStyle]="{
+  'color': h1Style ? 'colar' : 'cyan',
+  'font-size': !h1Style ? '1em' : '2em'
+}">Exercitation sunt ex elit occaecat labore voluptate consequat deserunt veniam elit veniam. Dolore id qui eiusmod cillum ad eu excepteur nostrud non reprehenderit nostrud. Ullamco cupidatat ad pariatur reprehenderit in duis id sit voluptate labore pariatur sunt. Proident sunt nulla aliquip occaecat in. Reprehenderit in reprehenderit occaecat eiusmod tempor excepteur eiusmod sunt. Consequat irure officia in minim.</p>
+
+<button (click)="firstClick()">Click me!</button>
