@@ -1,7 +1,32 @@
+@import "../../mixins.scss";
+
 .gray {
     color: gray;
 }
 
 .large {
     font-size: 3em;
+}
+
+.home {
+    @include e("users-list") {
+        list-style: none;
+    }
+    @include e("user-item") {
+        margin: 10px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: rgb(228, 228, 228);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    @include e("user-image") {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+    }
+    @include e("user-name") {
+        display: flex;
+        align-items: center;
+    }
 }

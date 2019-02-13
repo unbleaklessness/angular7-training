@@ -1,4 +1,17 @@
-[Learn Angular 7 in 50 Minutes - A Free Beginner's Crash Course](https://youtu.be/5wtnKulcquA?t=1872)
+- [Learn Angular 7 in 50 Minutes - A Free Beginner's Crash Course](https://youtu.be/5wtnKulcquA?t=1872).
+- [Angular 7 Cheat Sheet](https://angular.io/guide/cheatsheet).
+
+# Cheat sheet
+
+- `[ngClass]` - Object. Keys: class to enable. Values: `true`/`false` switch.
+- `[class.something]` - Value: `true`/`false`. Enable/disable class `something`.
+- `[style.color]` - Value: value of the `color` field of the style attribute.
+- `[ngStyle]` - Object. Keys: field string for stylesheet. Values: `true`/`false` switch.
+- `(click)` - Value: function to call for `click` event. Example value: `newClick()`.
+
+## Deploy
+- `ng build` (for development build) - Will create `dist` directory with all static files compiled.
+- `ng build --prod` (for production build).
 
 # Angular7Training
 

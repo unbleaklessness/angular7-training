@@ -13,3 +13,12 @@
 }">Exercitation sunt ex elit occaecat labore voluptate consequat deserunt veniam elit veniam. Dolore id qui eiusmod cillum ad eu excepteur nostrud non reprehenderit nostrud. Ullamco cupidatat ad pariatur reprehenderit in duis id sit voluptate labore pariatur sunt. Proident sunt nulla aliquip occaecat in. Reprehenderit in reprehenderit occaecat eiusmod tempor excepteur eiusmod sunt. Consequat irure officia in minim.</p>
 
 <button (click)="firstClick()">Click me!</button>
+
+<br><br>
+
+<ul *ngIf="users" class="home__users-list">
+  <li *ngFor="let user of users.data" class="home__user-item">
+    <img [src]="user.avatar"class="home__user-image">
+    <p class="home__user-name">{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>

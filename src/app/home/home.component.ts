@@ -9,14 +9,18 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
 
   h1Style = false;
+  users: object;
 
   constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getUsers().subscribe(data => {
+      this.users = data;
+      console.log(data);
+    });
   }
 
   firstClick() {
     this.h1Style = !this.h1Style;
-    this.data.firstClick()
   }
 }
